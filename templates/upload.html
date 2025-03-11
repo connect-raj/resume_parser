@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Resume</title>
+</head>
+<body>
+    <h1>Upload Your Resume (PDF)</h1>
+    <form action="/parse_resume" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/pdf" required>
+        <button type="submit">Upload and Parse</button>
+    </form>
+</body>
+</html>
