@@ -116,7 +116,7 @@ def parse_resume():
 # -----------------------------
 # API Endpoint: Parse Resume by PDF URL and Return JSON
 # -----------------------------
-@app.route('/parse_resume_url', methods=['GET'])
+@app.route('/api/v1/parse_resume_url', methods=['GET'])
 def parse_resume_url():
     """
     Accepts a PDF URL via a query parameter 'pdf_url' and returns JSON data
@@ -152,7 +152,7 @@ def parse_resume_url():
 # -----------------------------
 # HTML Endpoint: Upload Form
 # -----------------------------
-@app.route('/upload', methods=['GET'])
+@app.route('/', methods=['GET'])
 def upload_page():
     """
     Renders an HTML page with a file upload form.
